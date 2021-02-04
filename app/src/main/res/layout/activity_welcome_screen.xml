@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".WelcomeScreen">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    tools:context=".WelcomeScreen"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:id="@+id/signin_text"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingEnd="10dp"
+        android:onClick="signIn"
+        tools:ignore="RelativeOverlap"
+        android:clickable="true"
+        android:focusable="true" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/privacy"
+        android:layout_toStartOf="@id/signin_text"
+        android:paddingEnd="20dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/welcomPager"
+        android:layout_below="@id/signin_text"
+        android:layout_width="fill_parent"
+        android:layout_height="620dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/SliderDots"/>
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@id/getStartedBtn"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:id="@+id/getStartedBtn"
+        android:text="@string/get_started"
+        android:clickable="true"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:focusable="true"
+        android:onClick="getStartedBtn"/>
+
+</RelativeLayout>

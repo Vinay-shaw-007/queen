@@ -6,4 +6,8 @@
     <string name="login">Login!</string>
     <string name="need_help">Need help?</string>
     <string name="new_to_queen_sign_up_now">New to Queen?Sign Up now.</string>
+    <string name="todo">TODO</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="privacy">PRIVACY</string>
 </resources>
