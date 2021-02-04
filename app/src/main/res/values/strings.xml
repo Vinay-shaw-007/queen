@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Queen</string>
+    <string name="Passwordhint">Password</string>
+    <string name="loginbtnname">Login</string>
+    <string name="usernameHint">Username</string>
+    <string name="login">Login!</string>
+    <string name="need_help">Need help?</string>
+    <string name="new_to_queen_sign_up_now">New to Queen?Sign Up now.</string>
+</resources>
