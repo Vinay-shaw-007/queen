@@ -10,4 +10,6 @@
     <string name="get_started">GET STARTED</string>
     <string name="sign_in">SIGN IN</string>
     <string name="privacy">PRIVACY</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="signup_btn_name">Sign up</string>
 </resources>
